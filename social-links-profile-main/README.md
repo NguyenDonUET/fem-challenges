@@ -21,11 +21,10 @@ Add unique, descriptive text or aria-labels to each social link to clarify their
 
 - Using `<article>` signals that this section is a self-contained piece of content, improving the document’s structure and clarity.
 - better represent the profile as a standalone piece of content.
+- since the profile card is part of a larger page and not a standalone article.
 
 ```html
-<article class="profile">
-  <!-- profile content -->
-</article>
+<section class="profile card"></section>
 ```
 
 ## unnecessary extra layers
