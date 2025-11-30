@@ -21,28 +21,69 @@
     <title>Frontend Mentor | Social links profile</title>
   </head>
   <body>
-    <div class="card">
-      <div class="profile">
-        <img
-          src="./assets/images/avatar-jessica.jpeg"
-          alt="Profile Picture"
-          class="profile-image"
-          width="88"
-          height="88"
-        />
-        <div class="profile-intro">
-          <h1 class="name">Jessica Randall</h1>
-          <p class="location">London, United Kingdom</p>
+    <main>
+      <section class="profile-section">
+        <div class="card">
+          <div class="profile">
+            <img
+              src="./assets/images/avatar-jessica.jpeg"
+              alt="Profile Picture"
+              class="profile-image"
+              width="88"
+              height="88"
+            />
+            <div class="profile-intro">
+              <h1 id="profile-heading" class="name">Jessica Randall</h1>
+              <p class="location">London, United Kingdom</p>
+            </div>
+            <p class="quote">"Front-end developer and avid reader."</p>
+            <nav class="social-links" aria-label="Social links">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="btn"
+                    aria-label="Open Jessica Randall's GitHub profile"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn"
+                    aria-label="Open Jessica Randall's Frontend Mentor profile"
+                    >Frontend Mentor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn"
+                    aria-label="Open Jessica Randall's LinkedIn profile"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn"
+                    aria-label="Open Jessica Randall's Twitter profile"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn"
+                    aria-label="Open Jessica Randall's Instagram profile"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <p class="quote">"Front-end developer and avid reader."</p>
-        <div class="social-links">
-          <a href="#" class="btn">GitHub</a>
-          <a href="#" class="btn">Frontend Mentor</a>
-          <a href="#" class="btn">LinkedIn</a>
-          <a href="#" class="btn">Twitter</a>
-          <a href="#" class="btn">Instagram</a>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -15,16 +15,16 @@ html {
   --color-grey-800: hsl(0, 0%, 12%);
   --color-grey-900: hsl(0, 0%, 8%);
 
-  --spacing-50: 4px;
-  --spacing-100: 8px;
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-500: 40px;
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
 
-  --radius-12: 12px;
-  --fs-small: 14px;
-  --fs-large: 24px;
+  --radius-12: 0.75rem;
+  --fs-small: 0.875rem;
+  --fs-large: 1.5rem;
 }
 
 body {
@@ -36,9 +36,12 @@ body {
   font-size: var(--fs-small);
 }
 
+li {
+  list-style: none;
+}
 .card {
-  max-width: 384px;
-  padding: var(--spacing-500, 40px);
+  max-width: 24rem;
+  padding: var(--spacing-500, 2.5rem);
   border-radius: var(--radius-12);
   background: var(--color-grey-800);
   margin-inline: var(--spacing-300);
@@ -71,12 +74,12 @@ body {
 }
 
 .btn {
-  padding: var(--spacing-150, 12px);
+  padding: var(--spacing-150, 0.75rem);
   border-radius: var(--spacing-100);
   background: var(--color-grey-700, #333);
 }
 
-.social-links {
+.social-links ul {
   display: grid;
   gap: var(--spacing-200);
   text-align: center;
@@ -85,7 +88,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: var(--color-white);
-
+    display: block;
     &:hover {
       background: var(--color-green, #c4f82a);
       color: var(--color-grey-700, #333);
@@ -93,8 +96,8 @@ body {
   }
 }
 
-@media (max-width: 386px) {
+@media (max-width: 24.125rem) {
   .card {
-    padding: var(--spacing-300, 24px);
+    padding: var(--spacing-300, 1.5rem);
   }
 }
