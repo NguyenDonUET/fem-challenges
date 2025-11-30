@@ -27,3 +27,23 @@ Add unique, descriptive text or aria-labels to each social link to clarify their
   <!-- profile content -->
 </article>
 ```
+
+## unnecessary extra layers
+
+```html
+<section class="profile-section">
+  <div class="card">
+    <article class="profile">
+      <!-- content -->
+    </article>
+  </div>
+</section>
+
+<!-- FIx -->
+<section class="profile-section">
+  <article class="profile card">
+    <!-- Combine classes, remove extra div -->
+    <!-- content -->
+  </article>
+</section>
+```
