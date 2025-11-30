@@ -24,7 +24,7 @@ Add unique, descriptive text or aria-labels to each social link to clarify their
 - since the profile card is part of a larger page and not a standalone article.
 
 ```html
-<section class="profile card"></section>
+<div class="profile card"></section>
 ```
 
 ## unnecessary extra layers
