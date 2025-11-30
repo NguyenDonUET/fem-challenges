@@ -16,3 +16,14 @@ Add a single `<main>` element that wraps the core content of your page.
 ## Add aria-label for links
 
 Add unique, descriptive text or aria-labels to each social link to clarify their purpose, e.g., aria-label="Jessica's GitHub profile".
+
+## use article tag
+
+- Using `<article>` signals that this section is a self-contained piece of content, improving the document’s structure and clarity.
+- better represent the profile as a standalone piece of content.
+
+```html
+<article class="profile">
+  <!-- profile content -->
+</article>
+```
