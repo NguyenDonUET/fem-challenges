@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
+
+  --radius-12: 0.75rem;
+  --fs-small: 0.875rem;
+  --fs-large: 1.5rem;
+}
+
+body {
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  font-size: var(--fs-small);
+}
+
+li {
+  list-style: none;
+}
+.card {
+  max-width: 24rem;
+  padding: var(--spacing-500, 2.5rem);
+  border-radius: var(--radius-12);
+  background: var(--color-grey-800);
+  margin-inline: var(--spacing-300);
+}
+
+.profile {
+  display: grid;
+  gap: var(--spacing-300);
+}
+
+.profile-image {
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.profile-intro {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.profile-intro .name {
+  font-size: var(--fs-large);
+  font-weight: 600;
+}
+
+.profile-intro .location {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--color-green);
+}
+
+.btn {
+  padding: var(--spacing-150, 0.75rem);
+  border-radius: var(--spacing-100);
+  background: var(--color-grey-700, #333);
+}
+
+.social-links ul {
+  display: grid;
+  gap: var(--spacing-200);
+  text-align: center;
+
+  .btn {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-white);
+    display: block;
+    &:hover {
+      background: var(--color-green, #c4f82a);
+      color: var(--color-grey-700, #333);
+    }
+  }
+}
+
+@media (max-width: 24.125rem) {
+  .card {
+    padding: var(--spacing-300, 1.5rem);
+  }
+}
