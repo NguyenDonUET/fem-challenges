@@ -17,3 +17,22 @@
 ## Using Grid
 
 - use `width: 50%;` for middle card
+
+## Remove redundant fallback css variables
+
+## prefers-reduced-motion
+
+- you should disable (or reduce) transitions, animation for users who prefer reduced motion.
+
+```css
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+  * {
+    animation-duration: 0s;
+    animation-iteration-count: 1;
+    transition-duration: 0s;
+  }
+}
+```

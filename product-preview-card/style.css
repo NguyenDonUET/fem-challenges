@@ -79,7 +79,7 @@ body {
 }
 .product-category {
   font-size: var(--fs-caption);
-  font-weight: medium;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.3125rem; /* 5px */
   color: var(--grey);
