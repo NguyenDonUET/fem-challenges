@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+  * {
+    animation-duration: 0s;
+    animation-iteration-count: 1;
+    transition-duration: 0s;
+  }
+}

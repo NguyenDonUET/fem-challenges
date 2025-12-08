@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+main {
+  display: grid;
+  place-items: center;
+}
+body {
+  min-height: 100vh;
+}
+.testimonials {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "a a b e"
+    "c d d e";
+  max-width: 1114px;
+}
+.card {
+  padding: 32px;
+}
+.card--a {
+  grid-area: a;
+  background-color: red;
+}
+.card--b {
+  grid-area: b;
+  background-color: blue;
+}
+.card--c {
+  grid-area: c;
+  background-color: gray;
+}
+.card--d {
+  grid-area: d;
+  background-color: green;
+}
+.card--e {
+  grid-area: e;
+  background-color: yellow;
+}
