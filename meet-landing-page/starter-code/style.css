@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+/* Base */
+:root {
+  --clr-cyan-300: #8fe3f9;
+  --clr-cyan-600: #4d96a9;
+  --clr-purple-300: #b18bdd;
+  --clr-purple-600: #855fb1;
+  --clr-slate-300: #d1d1df;
+  --clr-slate-600: #87879d;
+  --clr-slate-900: #28283d;
+  --clr-white: #fafafa;
+
+  --fs-base: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 2.5rem;
+  --fs-700: 4rem;
+
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1400: 7rem;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5;
+}
+/* components */
+.number {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--clr-slate-300);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.number::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 5rem;
+  bottom: 100%;
+  background-color: var(--clr-slate-300);
+}
+.btn {
+  padding: var(--spacing-200) var(--spacing-500);
+  border-radius: 29px;
+  font-style: var(--fs-base);
+  font-weight: 900;
+  color: var(--clr-white);
+  border: none;
+  font-weight: 900;
+  min-height: var(--spacing-700);
+  cursor: pointer;
+}
+.btn:focus-visible {
+  --outline-color: var(--clr-cyan-300);
+  outline: 2px solid var(--outline-color);
+  outline-offset: 1px;
+}
+.btn--blue {
+  background-color: var(--clr-cyan-600);
+}
+.btn--blue:hover {
+  background-color: var(--clr-cyan-300);
+}
+.btn--purple {
+  background-color: var(--clr-purple-600);
+}
+.btn--purple:hover {
+  background-color: var(--clr-purple-300);
+}
+.btn--purple:focus-visible {
+  --outline-color: var(--clr-purple-300);
+}
+/* Layout */
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

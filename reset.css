@@ -13,13 +13,22 @@ textarea,
 select {
   font-family: inherit;
 }
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    interpolate-size: allow-keywords;
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  * {
-    animation-duration: 0s;
-    animation-iteration-count: 1;
-    transition-duration: 0s;
+}
+
+/* Smooth scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
