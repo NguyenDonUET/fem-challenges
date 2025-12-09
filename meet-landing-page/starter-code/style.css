@@ -6,6 +6,7 @@
 img {
   display: block;
   max-width: 100%;
+  object-fit: cover;
 }
 button,
 input,
@@ -96,6 +97,33 @@ body {
   --outline-color: var(--clr-purple-300);
 }
 /* Layout */
+.header {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+.header .logo {
+}
+.hero {
+  padding-top: var(--spacing-800);
+  padding-bottom: var(--spacing-400);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "left-image right-image"
+    "text text";
+  gap: 16px;
+}
+.left-img {
+  grid-area: left-image;
+}
+.right-img {
+  grid-area: right-image;
+}
+.hero__content {
+  grid-area: text;
+  text-align: center;
+}
 
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
